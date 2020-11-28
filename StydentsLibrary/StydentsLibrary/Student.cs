@@ -10,26 +10,28 @@ namespace StydentsLibrary
         public string Name { get; set; }
         public Courses Course { get; set; }
 
-        public Student (string name, int studentId)
-        {
-            Name = name;
-            StudentId = studentId;
-        }
 
-        List<Student> students = new List<Student>();
+        List<Student> students = null;
 
         public void Add(Student student)
         {
             students.Add(student);
         }
 
-        public void AddStudentsToCourse(List<Student> list)
+        public List<Student> AddStudentsToCourse(List<Student> list)
         {
             foreach (var student in list)
             {
                 student.Course.CourseId = 1;
                 student.Course.Name = "Math";
-            } 
+            }
+
+            return list;
+        }
+
+        public Student GetStudent(int index)
+        {
+            throw new NotImplementedException();
         }
     }
 }

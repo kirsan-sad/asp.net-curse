@@ -5,10 +5,12 @@ using System.Text;
 
 namespace StudentsLibrary
 {
-    interface IStudies
+    public interface IStudies
     {
         void Add(Student student);
 
-        void AddStudentsToCourse(List<Student> list);
+        List<Student> AddStudentsToCourse(List<Student> list);
+
+        Student GetStudent(int index);
     }
 }

@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\kirsan-sad\asp.net-curse\StydentsLibrary\StydentsLibrary\bin\Debug\netcoreapp3.1\StudentsLibrary.deps.json
+C:\Users\User\source\repos\kirsan-sad\asp.net-curse\StydentsLibrary\StydentsLibrary\bin\Debug\netcoreapp3.1\StudentsLibrary.dll
+C:\Users\User\source\repos\kirsan-sad\asp.net-curse\StydentsLibrary\StydentsLibrary\bin\Debug\netcoreapp3.1\StudentsLibrary.pdb
+C:\Users\User\source\repos\kirsan-sad\asp.net-curse\StydentsLibrary\StydentsLibrary\obj\Debug\netcoreapp3.1\StudentsLibrary.csprojAssemblyReference.cache
+C:\Users\User\source\repos\kirsan-sad\asp.net-curse\StydentsLibrary\StydentsLibrary\obj\Debug\netcoreapp3.1\StudentsLibrary.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\kirsan-sad\asp.net-curse\StydentsLibrary\StydentsLibrary\obj\Debug\netcoreapp3.1\StudentsLibrary.AssemblyInfo.cs
+C:\Users\User\source\repos\kirsan-sad\asp.net-curse\StydentsLibrary\StydentsLibrary\obj\Debug\netcoreapp3.1\StudentsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\kirsan-sad\asp.net-curse\StydentsLibrary\StydentsLibrary\obj\Debug\netcoreapp3.1\StudentsLibrary.dll
+C:\Users\User\source\repos\kirsan-sad\asp.net-curse\StydentsLibrary\StydentsLibrary\obj\Debug\netcoreapp3.1\StudentsLibrary.pdb
