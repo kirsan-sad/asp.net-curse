@@ -1,6 +1,7 @@
 ﻿using StudentsLibrary;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace StydentsLibrary
 {
@@ -12,6 +13,7 @@ namespace StydentsLibrary
 
 
         List<Student> students = null;
+        Courses math = new Courses { CourseId = 1, Name = "Math" };
 
         public void Add(Student student)
         {
@@ -22,8 +24,7 @@ namespace StydentsLibrary
         {
             foreach (var student in list)
             {
-                student.Course.CourseId = 1;
-                student.Course.Name = "Math";
+                student.Course = math;
             }
 
             return list;
@@ -32,6 +33,32 @@ namespace StydentsLibrary
         public Student GetStudent(int index)
         {
             throw new NotImplementedException();
+        }
+
+        public string SayHello(string name, int age)
+        {
+            string lastName = GetName();
+
+            return $"Hello {lastName}";
+        }
+
+        public virtual string GetName()
+        {
+            return "Nik";
+        }
+
+        public string ShowStudentById(List<Student> list, int id)
+        {
+            var name = list.Where(x => x.StudentId == id);
+
+            string temp = "";
+
+            foreach (var item in name)
+            {
+                temp = item.Name;
+            }
+
+            return temp;
         }
     }
 }
