@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SOLID",
+    "\\StydentsLibrary\\StydentsLibrary"
   ],
+  "SelectedNode": "\\SOLID",
   "PreviewInSolutionExplorer": false
 }
