@@ -20,8 +20,18 @@ public class Car : Vehicle, IMove, IParked
         Console.WriteLine("Машина едет");
     }
 
+    //O: Open-Closed Principle
+    //Принцип говорит, что классы должны быть открыты для расширения, но закрытвы дял модификаций
+    //Через переопределение виртуальных методов или реализацию интерфейсов расширяем функционал класса не модифицируя
+    //методы самого класса
+
     public void Park()
     {
         Console.WriteLine("Машина припарковалась");
+    }
+
+    public override void Paint(string color)
+    {
+        Console.WriteLine($"Вашу машину перекрасили в {color} цвет");
     }
 }
