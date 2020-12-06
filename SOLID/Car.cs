@@ -8,11 +8,12 @@ public class Car : Vehicle, IMove, IParked
     //Наследуются они от абстрактного класса "Транспорт"
 
     public string BodyType { get; set; }
-    public Car(string model, string brand, string bodytype)
+    public Car(string model, string brand, string bodytype, int wheels)
     {
         model = Model;
         brand = Brand;
         bodytype = BodyType;
+        wheels = Wheels;
     }
 
     public void Move()
@@ -33,5 +34,14 @@ public class Car : Vehicle, IMove, IParked
     public override void Paint(string color)
     {
         Console.WriteLine($"Вашу машину перекрасили в {color} цвет");
+    }
+
+    //L: Liskov Substitution Principle
+    //Принцип гласит, что объекты должны быть заменяемыми на экземпляры их подтипов без наружения работы программы
+    //Я понимаю это как принцип полиморфизма. Мы вызываем виртуальный метод базового класса, а он подгружает нам 
+    //переопределенный метод конкретного класса сам определяя нужный тип наследника
+    public override int WheelsCount()
+    {
+        return base.WheelsCount();
     }
 }
