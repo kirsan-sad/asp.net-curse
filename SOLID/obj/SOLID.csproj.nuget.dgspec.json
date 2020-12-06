@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Анон\\source\\repos\\s\\SOLID\\SOLID\\SOLID.csproj": {}
+    "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\SOLID\\SOLID.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Анон\\source\\repos\\s\\SOLID\\SOLID\\SOLID.csproj": {
+    "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\SOLID\\SOLID.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Анон\\source\\repos\\s\\SOLID\\SOLID\\SOLID.csproj",
+        "projectUniqueName": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\SOLID\\SOLID.csproj",
         "projectName": "SOLID",
-        "projectPath": "C:\\Users\\Анон\\source\\repos\\s\\SOLID\\SOLID\\SOLID.csproj",
+        "projectPath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\SOLID\\SOLID.csproj",
         "packagesPath": "C:\\Users\\Анон\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Анон\\source\\repos\\s\\SOLID\\SOLID\\obj\\",
+        "outputPath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\SOLID\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Анон\\AppData\\Roaming\\NuGet\\NuGet.Config",
