@@ -26,6 +26,9 @@ namespace Converter
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<IResultCreater, TxtFileCreater>();
+            services.AddSingleton<IResultCreater, ZipFileCreater>();
+            services.AddSingleton<IResultCreater, StreamCreater>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

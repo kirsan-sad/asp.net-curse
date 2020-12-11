@@ -9,9 +9,10 @@ namespace Converter
     {
         public enum Output
         {
-            Json,
+            Txt,
             Zip,
             Stream
         }
+
     }
 }

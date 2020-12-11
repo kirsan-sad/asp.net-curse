@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -10,7 +11,7 @@ namespace Converter.Controllers
 {
     //[ApiController]
     [Route("[controller]")]
-    public class ConverterController : ControllerBase
+    public class ConverterController : Controller
     {
         public int TempF { get; set; }
 
@@ -20,13 +21,14 @@ namespace Converter.Controllers
         {
             if (ModelState.IsValid)
             {
-                var res = valid.GetTempF();
-                return Content($"Температура в Фарингейтах равна: {res}");
+                var downloadResult = valid.GetTempF();
+                return downloadResult;
             }
             else
             {
                 return StatusCode(400);
             }
         }
+
     }
 }
