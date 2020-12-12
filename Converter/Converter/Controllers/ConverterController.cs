@@ -13,7 +13,6 @@ namespace Converter.Controllers
     [Route("[controller]")]
     public class ConverterController : Controller
     {
-        public int TempF { get; set; }
 
         [HttpGet]
         [Route("Convert")]
@@ -21,8 +20,7 @@ namespace Converter.Controllers
         {
             if (ModelState.IsValid)
             {
-                var downloadResult = valid.GetTempF();
-                return downloadResult;
+                return valid.GetTempF();
             }
             else
             {
