@@ -1,8 +1,11 @@
 using Converter;
 using Converter.Controllers;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using System;
+using System.Linq;
 
 namespace TestsConverter
 {
@@ -10,7 +13,7 @@ namespace TestsConverter
     public class TestsConverter
     {
         [TestMethod]
-        public void ConvertReturnsFileContentResult()
+        public void Convert_Returns_FileContentResult()
         {
             // Arrange
             var controller = new ConverterController();
