@@ -171,3 +171,5 @@ C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\TestsConverter
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\TestsConverter\obj\Debug\netcoreapp3.1\TestsConverter.csproj.CoreCompileInputs.cache
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\TestsConverter\obj\Debug\netcoreapp3.1\TestsConverter.dll
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\TestsConverter\obj\Debug\netcoreapp3.1\TestsConverter.pdb
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\TestsConverter\bin\Debug\netcoreapp3.1\Converter.Views.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\TestsConverter\bin\Debug\netcoreapp3.1\Converter.Views.pdb
