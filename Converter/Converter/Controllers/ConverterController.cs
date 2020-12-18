@@ -9,10 +9,15 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 
 namespace Converter.Controllers
 {
-    //[ApiController]
     [Route("[controller]")]
     public class ConverterController : Controller
     {
+        private IValidator _validator;
+
+        public ConverterController(IValidator validator)
+        {
+            _validator = validator;
+        }
 
         [HttpGet]
         [Route("Convert")]
@@ -20,7 +25,7 @@ namespace Converter.Controllers
         {
             if (ModelState.IsValid)
             {
-                return valid.GetTempF();
+                return _validator.GetTempFile(valid.TempC, valid.Output);
             }
             else
             {
@@ -28,5 +33,37 @@ namespace Converter.Controllers
             }
         }
 
+        [Route("Redirect")]
+        public IActionResult Redirect()
+        {
+            return Redirect("https://www.it-academy.by/");
+        }
+
+        [HttpGet]
+        [Route("Index")]
+        public IActionResult Index()
+        {
+            return View(new ValidationTemp());
+        }
+
+        [HttpPost]
+        [Route("Index")]
+        public IActionResult Index(ValidationTemp valid)
+        {
+            int TempF = 0;
+
+            if (ModelState.IsValid)
+            {
+                TempF = _validator.GetTempFahrenheit(valid.TempC);
+            }
+            else
+            {
+                return BadRequest();
+            }
+
+            ViewData["TempF"] = TempF;
+
+            return View(valid);
+        }
     }
 }
