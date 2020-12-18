@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Converter.Controllers
 {
-    public class ValidationTemp
+    public class ValidationTemp : IValidator
     {
         public int TempF { get; set; }
 
@@ -19,18 +19,22 @@ namespace Converter.Controllers
         [Range(0, 2, ErrorMessage = "Invalid num")]
         public Helper.Output Output { get; set; }
 
-        //private IResultCreater _resultCreater;
+        public int GetTempFahrenheit(int tempC)
+        {
+            TempC = tempC;
+            TempF = ((TempC * 9) / 5) + 32;
 
-        //public ValidationTemp(IResultCreater resultCreater)
-        //{
-        //    _resultCreater = resultCreater;
-        //}
+            return TempF;
+        }
 
-        public IActionResult GetTempF()
+        public IActionResult GetTempFile(int tempC, Helper.Output output)
         {
             IActionResult result = null;
+            Output = output;
 
-            TempF = ((TempC * 9) / 5) + 32;
+            GetTempFahrenheit(tempC);
+
+            //TempF = ((TempC * 9) / 5) + 32;
 
             var responseString = $"{TempC} °C is {TempF} °F";
 
@@ -38,21 +42,18 @@ namespace Converter.Controllers
             {
                 IResultCreater txt = new TxtFileCreater();
                 result = txt.GetResult(responseString);
-                //result = _resultCreater.GetResult(responseString);
             }
             
             else if(Output == Helper.Output.Zip)
             {
                 IResultCreater zip = new ZipFileCreater();
                 result = zip.GetResult(responseString);
-                //result = _resultCreater.GetResult(responseString);
             }
 
             else if (Output == Helper.Output.Stream)
             {
                 IResultCreater stream = new StreamCreater();
                 result = stream.GetResult(responseString);
-                //result = _resultCreater.GetResult(responseString);
             }
 
             return result;

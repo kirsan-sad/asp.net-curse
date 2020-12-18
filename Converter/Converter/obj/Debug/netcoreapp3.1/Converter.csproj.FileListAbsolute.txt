@@ -92,3 +92,15 @@ C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.dll
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.pdb
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.genruntimeconfig.cache
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\bin\Debug\netcoreapp3.1\Converter.Views.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\bin\Debug\netcoreapp3.1\Converter.Views.pdb
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.RazorAssemblyInfo.cache
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.RazorAssemblyInfo.cs
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.TagHelpers.input.cache
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.TagHelpers.output.cache
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.RazorCoreGenerate.cache
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.RazorTargetAssemblyInfo.cs
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Converter.Views.pdb
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Razor\Views\Converter\Index.cshtml.g.cs
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Converter\Converter\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs

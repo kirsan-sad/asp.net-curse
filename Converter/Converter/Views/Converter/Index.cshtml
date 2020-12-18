@@ -1,0 +1,21 @@
+﻿@model Converter.Controllers.ValidationTemp;
+@{
+    ViewData["Title"] = "ConvertView";
+}
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post" action="/Converter/Index">
+    <div class="text-center">
+        <h1 class="display-4">CONVERTER</h1>
+        <p><label>Сelsius Value °С</label></p>
+        <p><input type="number" name="TempC" value="@Model.TempC" /></p>
+        <p><input type="submit" value="conventer" /></p>
+        <p><label>Fahrenheit Value °F</label></p>
+        <p><label>@ViewData["TempF"]</label></p>
+    </div>
+</form>
+
+<p>Redirect page - <a href="/Converter/Redirect">Redirect</a></p>
+<p>FileResult - <a href="/Converter/Convert?tempc=100&output=zip">parametr °C = 100, Output = Zip</a></p>

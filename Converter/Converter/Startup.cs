@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Converter.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,9 +27,8 @@ namespace Converter
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IResultCreater, TxtFileCreater>();
-            services.AddSingleton<IResultCreater, ZipFileCreater>();
-            services.AddSingleton<IResultCreater, StreamCreater>();
+            services.AddControllersWithViews();
+            services.AddSingleton<IValidator, ValidationTemp>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
