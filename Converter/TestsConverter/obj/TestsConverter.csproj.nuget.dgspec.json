@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj": {}
+    "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj": {
+    "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj",
+        "projectUniqueName": "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj",
         "projectName": "Converter",
-        "projectPath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj",
+        "projectPath": "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj",
         "packagesPath": "C:\\Users\\Анон\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\obj\\",
+        "outputPath": "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Анон\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj": {
+    "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj",
+        "projectUniqueName": "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj",
         "projectName": "TestsConverter",
-        "projectPath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj",
+        "projectPath": "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj",
         "packagesPath": "C:\\Users\\Анон\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\obj\\",
+        "outputPath": "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Анон\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj": {
-                "projectPath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj"
+              "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj": {
+                "projectPath": "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj"
               }
             }
           }

@@ -9,6 +9,13 @@ using System.Threading.Tasks;
 
 namespace Converter.Controllers
 {
+    public enum FileType
+    {
+        Txt,
+        Zip,
+        Stream
+    }
+
     public class ValidationTemp : IValidator
     {
         public int TempF { get; set; }
@@ -17,7 +24,7 @@ namespace Converter.Controllers
         public int TempC { get; set; }
 
         [Range(0, 2, ErrorMessage = "Invalid num")]
-        public Helper.Output Output { get; set; }
+        public FileType FileType { get; set; }
 
         public int GetTempFahrenheit(int tempC)
         {
@@ -27,30 +34,28 @@ namespace Converter.Controllers
             return TempF;
         }
 
-        public IActionResult GetTempFile(int tempC, Helper.Output output)
+        public IActionResult GetTempFile(int tempC, FileType fileType)
         {
             IActionResult result = null;
-            Output = output;
+            FileType = fileType;
 
             GetTempFahrenheit(tempC);
 
-            //TempF = ((TempC * 9) / 5) + 32;
-
             var responseString = $"{TempC} °C is {TempF} °F";
 
-            if(Output == Helper.Output.Txt)
+            if(FileType == FileType.Txt)
             {
                 IResultCreater txt = new TxtFileCreater();
                 result = txt.GetResult(responseString);
             }
             
-            else if(Output == Helper.Output.Zip)
+            else if(FileType == FileType.Zip)
             {
                 IResultCreater zip = new ZipFileCreater();
                 result = zip.GetResult(responseString);
             }
 
-            else if (Output == Helper.Output.Stream)
+            else if (FileType == FileType.Stream)
             {
                 IResultCreater stream = new StreamCreater();
                 result = stream.GetResult(responseString);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lst0gHtlxx6SH5TINkRsYHXVN/XmqHXki3m1hmFdNtxInKudcvlsxX0b8+RWbYPR+tbJimcwHd4bUkJUBxVmQA==",
+  "dgSpecHash": "xFbk07eGKtojJgDcv37QjdpTehIhpKGGuhUp8G+DtiLofzdHdZFbueCcWQsqpQwFPDElkCV2vZdHIiuF2o/qRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj",
+  "projectFilePath": "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\TestsConverter\\TestsConverter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Анон\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Анон\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",

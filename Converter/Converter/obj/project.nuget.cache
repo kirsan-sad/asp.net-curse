@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s/txbGf1KOnyYPSbaJlxaSSRRb8qwxNFEey0IKIM1LvBto0W7+HY4p5QHVTXirGMlmQJzELOBq5h9vfJKfMDnQ==",
+  "dgSpecHash": "0779SKSyeKr71eWzJHeEtWOKvZu21IUEAIiTCYtk2vgrkcM7FTWEh6/hHcWXU5pS5u7Cz6jfbYS6yXXe1nph1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj",
+  "projectFilePath": "C:\\Users\\Анон\\Source\\Repos\\kirsan-sad\\asp.net-curse\\Converter\\Converter\\Converter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Анон\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Анон\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Converter.Controllers;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ namespace Converter
 {
    public interface IValidator
     {
-        public IActionResult GetTempFile(int tempC, Helper.Output output);
+        public IActionResult GetTempFile(int tempC, FileType fileType);
 
         public int GetTempFahrenheit(int tempC);
     }

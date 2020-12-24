@@ -16,7 +16,7 @@ namespace Converter.Controllers
 
         public ConverterController(IValidator validator)
         {
-            _validator = validator;
+            _validator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
         [HttpGet]
@@ -25,7 +25,7 @@ namespace Converter.Controllers
         {
             if (ModelState.IsValid)
             {
-                return _validator.GetTempFile(valid.TempC, valid.Output);
+                return _validator.GetTempFile(valid.TempC, valid.FileType);
             }
             else
             {
