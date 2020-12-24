@@ -20,14 +20,14 @@ namespace TestsConverter
             // Arrange
             var validator = new Mock<IValidator>();
             FileContentResult file = new FileContentResult(Encoding.UTF8.GetBytes("test.txt"), "text/plain");
-            validator.Setup(x => x.GetTempFile(20, Helper.Output.Zip)).Returns(file);
+            validator.Setup(x => x.GetTempFile(20, FileType.Zip)).Returns(file);
             
             var controller = new ConverterController(validator.Object);
 
             var valid = new ValidationTemp
             {
                 TempC = 20,
-                Output = Helper.Output.Zip
+                FileType = FileType.Zip
             };
 
             // Act
@@ -48,11 +48,11 @@ namespace TestsConverter
 
             // Act
             var result = controller.Index(valid);
+            var badRequestResult = result as ViewResult;
 
             // Assert
-            var badRequestResult = result as ViewResult;
-            Assert.IsNotNull(badRequestResult, "BadRequestObjectResult");
-            Assert.IsInstanceOfType(badRequestResult, typeof(ViewResult));
+            Assert.IsNotNull(badRequestResult);
+            validator.Verify(controller => controller.GetTempFahrenheit(It.IsAny<int>()), Times.Once);
         }
 
         [TestMethod]
