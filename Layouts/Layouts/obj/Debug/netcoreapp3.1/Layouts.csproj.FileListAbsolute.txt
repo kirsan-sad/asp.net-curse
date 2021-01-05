@@ -133,3 +133,7 @@ C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debu
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Layouts.csproj.CoreCompileInputs.cache
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Layouts.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Notebooks.cshtml.g.cs
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Cameras.cshtml.g.cs
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Headphoneses.cshtml.g.cs
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Phones.cshtml.g.cs
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\_GetCategories.cshtml.g.cs

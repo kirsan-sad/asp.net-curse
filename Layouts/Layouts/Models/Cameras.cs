@@ -1,30 +1,25 @@
-﻿using Microsoft.Data.SqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Layouts.Views
+namespace Layouts.Models
 {
-    public class Catalog
+    public class Cameras : Repository
     {
         public int Id { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
-        public string System { get; set; }
         public int Price { get; set; }
 
-        string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=Layouts;Integrated Security=True";
-
-        
-
-        public List<Catalog> GetContent(string catalogItem)
+        public override List<Repository> GetContent()
         {
-            string sqlExpression = $"SELECT * FROM {catalogItem}";
-            var listItems = new List<Catalog>();
+            string sqlExpression = $"SELECT * FROM Camera";
 
             int id, price;
-            string brand, model, system = null;
+            string brand = string.Empty;
+            string model = string.Empty;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -32,27 +27,23 @@ namespace Layouts.Views
                 SqlCommand command = new SqlCommand(sqlExpression, connection);
                 SqlDataReader reader = command.ExecuteReader();
 
-                if (reader.HasRows) // если есть данные
+                if (reader.HasRows) // if there is data
                 {
-
-                    while (reader.Read()) // построчно считываем данные
+                    while (reader.Read()) // read data line by line
                     {
                         id = reader.GetInt32(0);
                         brand = reader.GetString(1);
                         model = reader.GetString(2);
                         price = reader.GetInt32(3);
 
-                        if(catalogItem != "Camera" || catalogItem != "Headphones")
-                            system = reader.GetString(4); 
-
-                        listItems.Add(new Catalog {Id = id, Brand = brand, Model = model, System = system, Price = price});
+                        listItems.Add(new Cameras { Id = id, Brand = brand, Model = model, Price = price });
                     }
                 }
 
                 reader.Close();
-
                 return listItems;
             }
         }
+
     }
 }

@@ -1,18 +1,17 @@
-﻿@using Layouts.Views
-@using Layouts.Models
+﻿@using Layouts.Models
 @{
     ViewData["Title"] = "Home Page";
 }
-<nav class="col-xl-2">
-
-</nav>
+    <nav class="col-xl-2">
+        @await Html.PartialAsync("_GetCategories")
+    </nav>
 <article class="col-md-14 col-xl-10">
     <div class="text-center">
-        <h1 class="display-4">All items in catalog</h1>
+        <h1 class="display-4">All phones in catalog</h1>
         <p>
             <table border='1'>
                 <tr><th>Id</th><th>Brand</th><th>Model</th><th>System</th><th>Price</th></tr>
-                @foreach (Catalog item in ViewBag.Content)
+                @foreach (Phones item in ViewBag.Content)
                 {
             <tr>
                 <td>@item.Id</td>
