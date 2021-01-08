@@ -7087,19 +7087,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Анон\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Layouts\\Layouts\\Layouts.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\asp.net-curse\\Layouts\\Layouts\\Layouts.csproj",
       "projectName": "Layouts",
-      "projectPath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Layouts\\Layouts\\Layouts.csproj",
-      "packagesPath": "C:\\Users\\Анон\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Анон\\source\\repos\\kirsan-sad\\asp.net-curse\\Layouts\\Layouts\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\asp.net-curse\\Layouts\\Layouts\\Layouts.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\asp.net-curse\\Layouts\\Layouts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Анон\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7150,7 +7150,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
