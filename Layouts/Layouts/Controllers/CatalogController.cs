@@ -15,22 +15,10 @@ namespace Layouts.Controllers
 
         public IActionResult Index()
         {
-            //var cat = new Repository();
-            //ViewBag.Content = Repository.;
+            var defuoltListPhones = new List<Phones>();
 
-            return View();
-        }
-
-        public IActionResult Phones()
-        {
-            var listPhones = new List<Phones>();
 
             string sqlExpression = $"SELECT * FROM Mobile_Phone";
-
-            int id, price;
-            string brand = string.Empty;
-            string model = string.Empty;
-            string system = string.Empty;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -42,13 +30,49 @@ namespace Layouts.Controllers
                 {
                     while (reader.Read()) // read data line by line
                     {
-                        id = reader.GetInt32(0);
-                        brand = reader.GetString(1);
-                        model = reader.GetString(2);
-                        price = reader.GetInt32(3);
-                        system = reader.GetString(4);
+                        var phone = new Phones
+                        {
+                            Id = reader.GetInt32(0),
+                            Brand = reader.GetString(1),
+                            Model = reader.GetString(2),
+                            Price = reader.GetInt32(3),
+                            System = reader.GetString(4)
+                        };
 
-                        listPhones.Add(new Phones { Id = id, Brand = brand, Model = model, System = system, Price = price });
+                        defuoltListPhones.Add(phone);
+                    }
+                }
+            }
+
+            ViewBag.Content = defuoltListPhones;
+            return View();
+        }
+
+        public IActionResult Phones()
+        {
+            var listPhones = new List<Phones>();
+
+            string sqlExpression = $"SELECT * FROM Mobile_Phone";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(sqlExpression, connection);
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        var phone = new Phones {
+                            Id = reader.GetInt32(0),
+                            Brand = reader.GetString(1),
+                            Model = reader.GetString(2),
+                            Price = reader.GetInt32(3),
+                            System = reader.GetString(4) 
+                        };
+
+                        listPhones.Add(phone);
                     }
                 }
             }
@@ -63,10 +87,6 @@ namespace Layouts.Controllers
 
             string sqlExpression = $"SELECT * FROM Camera";
 
-            int id, price;
-            string brand = string.Empty;
-            string model = string.Empty;
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -77,12 +97,15 @@ namespace Layouts.Controllers
                 {
                     while (reader.Read())
                     {
-                        id = reader.GetInt32(0);
-                        brand = reader.GetString(1);
-                        model = reader.GetString(2);
-                        price = reader.GetInt32(3);
+                        var camera = new Cameras
+                        {
+                            Id = reader.GetInt32(0),
+                            Brand = reader.GetString(1),
+                            Model = reader.GetString(2),
+                            Price = reader.GetInt32(3),
+                        };
 
-                        listCameras.Add(new Cameras { Id = id, Brand = brand, Model = model, Price = price });
+                        listCameras.Add(camera);
                     }
                 }
             }
@@ -96,11 +119,6 @@ namespace Layouts.Controllers
 
             string sqlExpression = $"SELECT * FROM Notebook";
 
-            int id, price;
-            string brand = string.Empty;
-            string model = string.Empty;
-            string system = string.Empty;
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -111,13 +129,16 @@ namespace Layouts.Controllers
                 {
                     while (reader.Read())
                     {
-                        id = reader.GetInt32(0);
-                        brand = reader.GetString(1);
-                        model = reader.GetString(2);
-                        price = reader.GetInt32(3);
-                        system = reader.GetString(4);
+                        var notebook = new Notebooks
+                        {
+                            Id = reader.GetInt32(0),
+                            Brand = reader.GetString(1),
+                            Model = reader.GetString(2),
+                            Price = reader.GetInt32(3),
+                            System = reader.GetString(4)
+                        };
 
-                        listNotebooks.Add(new Notebooks { Id = id, Brand = brand, Model = model, System = system, Price = price });
+                        listNotebooks.Add(notebook);
                     }
                 }
             }
@@ -132,10 +153,6 @@ namespace Layouts.Controllers
 
             string sqlExpression = $"SELECT * FROM Headphones";
 
-            int id, price;
-            string brand = string.Empty;
-            string model = string.Empty;
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -146,12 +163,15 @@ namespace Layouts.Controllers
                 {
                     while (reader.Read())
                     {
-                        id = reader.GetInt32(0);
-                        brand = reader.GetString(1);
-                        model = reader.GetString(2);
-                        price = reader.GetInt32(3);
+                        var headphones = new Headphoneses
+                        {
+                            Id = reader.GetInt32(0),
+                            Brand = reader.GetString(1),
+                            Model = reader.GetString(2),
+                            Price = reader.GetInt32(3),
+                        };
 
-                        listHeadphoneses.Add(new Headphoneses { Id = id, Brand = brand, Model = model, Price = price });
+                        listHeadphoneses.Add(headphones);
                     }
                 }
             }
