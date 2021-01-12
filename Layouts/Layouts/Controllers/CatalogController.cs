@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
 using System.Threading.Tasks;
 using Layouts.Models;
@@ -15,36 +16,12 @@ namespace Layouts.Controllers
 
         public IActionResult Index()
         {
-            var defuoltListPhones = new List<Phones>();
+            DataContext db = new DataContext(connectionString);
 
+            var applePhone = db.GetTable<Phones>();
+            var query = applePhone.Where(a => a.Brand == "apple");
 
-            string sqlExpression = $"SELECT * FROM Mobile_Phone";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                SqlCommand command = new SqlCommand(sqlExpression, connection);
-                SqlDataReader reader = command.ExecuteReader();
-
-                if (reader.HasRows) // if there is data
-                {
-                    while (reader.Read()) // read data line by line
-                    {
-                        var phone = new Phones
-                        {
-                            Id = reader.GetInt32(0),
-                            Brand = reader.GetString(1),
-                            Model = reader.GetString(2),
-                            Price = reader.GetInt32(3),
-                            System = reader.GetString(4)
-                        };
-
-                        defuoltListPhones.Add(phone);
-                    }
-                }
-            }
-
-            ViewBag.Content = defuoltListPhones;
+            ViewBag.Content = query;
             return View();
         }
 

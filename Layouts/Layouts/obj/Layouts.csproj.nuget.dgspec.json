@@ -45,6 +45,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "Mindbox.Data.Linq": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

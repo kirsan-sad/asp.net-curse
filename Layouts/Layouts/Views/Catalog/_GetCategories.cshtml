@@ -1,8 +1,7 @@
-﻿@model IEnumerable<string>
-<h3>Категории</h3>
+﻿<h3>Категории</h3>
 <ul>
-    <li><a href="Phones">Phones</a></li>
-    <li><a href="Cameras">Cameras</a></li>
-    <li><a href="Notebooks">Notebooks</a></li>
-    <li><a href="Headphoneses">Headphoneses</a></li>
+    <li><a asp-controller="Catalog" asp-action="Phones">Phones</a></li>
+    <li><a asp-controller="Catalog" asp-action="Cameras">Cameras</a></li>
+    <li><a asp-controller="Catalog" asp-action="Notebooks">Notebooks</a></li>
+    <li><a asp-controller="Catalog" asp-action="Headphoneses">Headphoneses</a></li>
 </ul>

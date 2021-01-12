@@ -130,8 +130,6 @@ C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debu
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Layouts.csproj.CoreCompileInputs.cache
-C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Layouts.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Notebooks.cshtml.g.cs
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Cameras.cshtml.g.cs
 C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Headphoneses.cshtml.g.cs
@@ -276,3 +274,14 @@ C:\Users\User\Documents\GitHub\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreap
 C:\Users\User\Documents\GitHub\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\staticwebassets\Layouts.StaticWebAssets.Manifest.cache
 C:\Users\User\Documents\GitHub\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\staticwebassets\Layouts.StaticWebAssets.xml
 C:\Users\User\Documents\GitHub\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Layouts.genruntimeconfig.cache
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Layouts.csproj.CoreCompileInputs.cache
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\obj\Debug\netcoreapp3.1\Layouts.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\Mindbox.Data.Linq.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\Mindbox.Expressions.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Анон\source\repos\kirsan-sad\asp.net-curse\Layouts\Layouts\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
