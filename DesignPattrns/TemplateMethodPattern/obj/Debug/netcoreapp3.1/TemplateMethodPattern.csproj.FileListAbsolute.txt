@@ -1,0 +1,13 @@
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\bin\Debug\netcoreapp3.1\TemplateMethodPattern.exe
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\bin\Debug\netcoreapp3.1\TemplateMethodPattern.deps.json
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\bin\Debug\netcoreapp3.1\TemplateMethodPattern.runtimeconfig.json
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\bin\Debug\netcoreapp3.1\TemplateMethodPattern.runtimeconfig.dev.json
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\bin\Debug\netcoreapp3.1\TemplateMethodPattern.dll
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\bin\Debug\netcoreapp3.1\TemplateMethodPattern.pdb
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\obj\Debug\netcoreapp3.1\TemplateMethodPattern.csproj.CoreCompileInputs.cache
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\obj\Debug\netcoreapp3.1\TemplateMethodPattern.AssemblyInfoInputs.cache
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\obj\Debug\netcoreapp3.1\TemplateMethodPattern.AssemblyInfo.cs
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\obj\Debug\netcoreapp3.1\TemplateMethodPattern.dll
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\obj\Debug\netcoreapp3.1\TemplateMethodPattern.pdb
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\obj\Debug\netcoreapp3.1\TemplateMethodPattern.genruntimeconfig.cache
+C:\Users\Анон\source\repos\DesignPattrns\TemplateMethodPattern\obj\Debug\netcoreapp3.1\TemplateMethodPattern.csprojAssemblyReference.cache
